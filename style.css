@@ -1,0 +1,150 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgb(120, 0, 171),
+    rgb(0, 135, 184),
+    rgb(0, 211, 176)
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-weight: 900;
+}
+
+#meteo-container {
+  background-color: rgb(255, 255, 255, 0.2);
+  max-width: 1000px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(100px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h2,
+label,
+p {
+  color: #fff;
+  margin: 8px 0;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+button {
+  background-color: rgb(81, 249, 224);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: rgb(35, 235, 205);
+}
+
+#temp-div p {
+  font-size: 3.5em;
+}
+
+.name-weather {
+  display: flex;
+}
+
+#weather-info {
+  font-size: 1.6em;
+}
+
+#weather-info p {
+  padding: 10px;
+}
+
+#weather-icon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none;
+}
+
+#hourly-forecast {
+  margin: 50px 10px;
+  width: 90%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  width: 10%;
+  min-width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.hourly-item img {
+  width: 50px;
+  height: 50px;
+}
+
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  button {
+    width: 40%;
+    font-size: 1em;
+  }
+
+  #temp-div p {
+    font-size: 2.2em;
+  }
+
+  #weather-info {
+    font-size: 1.2rem;
+  }
+
+  .hourly-item img {
+    width: 40px;
+    height: 40px;
+  }
+}

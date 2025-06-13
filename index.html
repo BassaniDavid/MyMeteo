@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>mymeteo</title>
+  </head>
+  <body>
+    <div id="meteo-container">
+      <h2>mymeteo</h2>
+      <input type="text" id="city" placeholder="Inserisci la città" />
+      <button onclick="getWeather()">Cerca</button>
+      <img id="weather-icon" alt="weather icon" />
+      <div id="temp-div"></div>
+      <div class="name-weather" id="weather-info"></div>
+      <div id="hourly-forecast"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
