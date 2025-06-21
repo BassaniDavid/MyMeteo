@@ -1,9 +1,9 @@
 body {
   background: linear-gradient(
     to right,
-    rgb(120, 0, 171),
-    rgb(0, 135, 184),
-    rgb(0, 211, 176)
+    rgb(1, 137, 233),
+    rgb(1, 170, 232),
+    rgb(0, 235, 196)
   );
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -20,7 +20,7 @@ body {
   width: 80%;
   border-radius: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
   display: flex;
@@ -146,5 +146,12 @@ button:hover {
   .hourly-item img {
     width: 40px;
     height: 40px;
+  }
+}
+
+/* Aggiunta della media query per dispositivi mobili */
+@media (max-width: 425px) {
+  #meteo-container {
+    border-radius: 4vh;
   }
 }
