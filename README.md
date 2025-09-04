@@ -15,7 +15,7 @@ Il progetto "Web App Meteo" è un semplice sito web che mostra le previsioni met
 
 - **HTML/CSS**: Per la struttura e lo stile della web app.
 - **JavaScript**: Per le richieste API e interazioni con l'utente.
-- **API di meteo**: Utilizziamo un'API pubblica per ottenere i dati meteorologici (ad esempio, OpenWeatherMap).
+- **API di meteo**: Utilizziamo un'API pubblica per ottenere i dati meteorologici (OpenWeatherMap).
 
 ## Come utilizzare il progetto
 
